@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Montserrat', sans-serif; ;
+    box-sizing: border-box;
+}
+
+:root {
+    --azul: #77aff9;
+    --azul-claro: #bdeaf7;
+    --azul-oscuro: #2c4674;
+
+}
+
+.home {
+    width: 100%;
+    background: var(--azul-oscuro);
+    
+}
+
+.content-center {
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    position: relative;
+    max-height: 1200px;
+    min-height:800px;
+    background: #dbeff9;
+    overflow: hidden;
+}
+
+.cajaImg {
+    background:#d1723f;
+    position: relative;
+    border-radius: 0px 0px 50px 50px;
+    height: 500px;
+}
+.cajaImg .atras{
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 90%;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.mover{
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.mover:hover{
+    transform: translateX(-10px);
+}
+
+.cajaImg img{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cajitas{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.cajitas .caja{
+    background: #cfd5d5ad;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.cajitas .caja h1{
+    color: var(--azul-oscuro);
+    font-size: 1rem;
+}
+.cajitas .caja p{
+    color: var(--azul-oscuro);
+    font-size: 0.8rem;
+    font-weight: 200px;
+}
+
+.informacion{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacion .raza{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.informacion .raza h3{
+    color: var(--azul-oscuro);
+    font-size: 1.5rem;
+}
+.informacion h3{
+    color: var(--azul-oscuro);
+    font-size: 1.5rem;
+}
+.informacion .raza h4{
+    color: var(--azul-oscuro);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.foto{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    place-items:center;
+}
+
+.foto .infoPersona h2{
+    color: var(--azul-oscuro);
+    font-size: 1rem;
+}
+.foto .infoPersona h3{
+    color: var(--azul-oscuro);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.casa{
+    background-color: #58c084;
+    width: 80%;
+    display:inline-block ;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+}
